@@ -15,12 +15,12 @@ export default function Home() {
   };
 
   return (
-    <div className="bg-gradient-to-b from-gray-600 to-black h-screen flex flex-col items-center justify-center text-white">
+    <div className="bg-gradient-to-b from-gray-600 to-black h-screen flex flex-col items-center justify-center text-white -gap-10">
       {/* Animated Main Text */}
-      <div className="flex flex-col items-center justify-center uppercase -mt-10">
-        <div className="overflow-hidden">
+      <div className=" flex flex-col items-center justify-center uppercase ">
+        <div className="overflow-hidden" >
           <p 
-            className="animate-reveal font-bold text-[100px] -mt-10" 
+            className="animate-reveal font-medium text-[85px]  " 
             onAnimationEnd={handleAnimationEnd}
           >
             You Can
@@ -28,7 +28,7 @@ export default function Home() {
         </div>
         <div className="overflow-hidden">
           <p 
-            className="animate-reveal font-bold text-[220px] -mt-20" 
+            className="animate-reveal font-semibold text-[210px] -mt-20" 
             onAnimationEnd={handleAnimationEnd}
           >
             Win
@@ -37,10 +37,10 @@ export default function Home() {
       </div>
 
       {/* Bottom Content Container */}
-      <div className="relative -mt-10 flex items-center justify-center">
+      <div className="relative -mt-10 flex items-center justify-center footLightMtPro">
         {/* Fading Text */}
         <p
-          className={`font-normal text-[45px] text-center transition-opacity duration-500 ${
+          className={`quote-font font-normal text-[35px] text-center transition-opacity duration-500 ${
             textVisible ? 'opacity-100' : 'opacity-0'
           }`}
         >
@@ -49,8 +49,8 @@ export default function Home() {
 
         {/* Animated Hover Button */}
         {!textVisible && (
-          <Link href={`/main`} onClick={()=>{}} className="group absolute w-72 h-12 bg-gray-600 text-black text-2xl rounded-full overflow-hidden shadow-lg transition-all duration-300 flex items-center justify-center">
-            <span className="relative z-10 text-center">Get in</span>
+          <Link href={`/main`} onClick={()=>{}} className="group absolute w-64 h-12 bg-gray-600 text-black text-2xl rounded-full overflow-hidden shadow-lg transition-all duration-300 flex items-center justify-center">
+            <span className="relative z-10 text-center quote-font font-bold">Get in</span>
             <div 
               className="absolute inset-0 bg-white rounded-full transform scale-y-0 group-hover:scale-y-100 transition-transform duration-500"
               style={{ transformOrigin: 'bottom' }}

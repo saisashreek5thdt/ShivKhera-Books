@@ -4,7 +4,7 @@ export const chapterData=[
         Chapter:"Chapter 1",
         title:"Importance of Attitude",
         info:"Winner's Edge",
-        color:"green"
+        color:"green",
     },
     {
         id:"2",
@@ -18,21 +18,21 @@ export const chapterData=[
         Chapter:"Chapter 3",
         title:"Success",
         info:"Winning Strategies",
-        color:"gray"
+        color:"gray",
     },
     {
         id:"4",
         Chapter:"Chapter 4",
         title:"Attributes of Success",
         info:"Path of success",
-        color:"green"
+        color:"green",
     },
     {
         id:"5",
         Chapter:"Chapter 1",
         title:"Importance of Attitude",
         info:"Winner's Edge",
-        color:"blue"
+        color:"blue",
     },
     
 ]

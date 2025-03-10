@@ -14,3 +14,129 @@
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
   }
+
+
+ /* Parallax Animation */
+.opacity-0 {
+  opacity: 0;
+}
+
+.opacity-100 {
+  opacity: 1;
+}
+
+.translate-y-20 {
+  transform: translateY(20px);
+}
+
+.translate-y-0 {
+  transform: translateY(0);
+}
+
+.transition-all {
+  transition: all 1s ease-in-out;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Typewriting Effect */
+.type-writer-text {
+  position: relative;
+  color: black;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 1px solid #dedede;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes cursorblink {
+  from {
+    border-right: 1px solid #dedede;
+  }
+  to {
+    border-right: 1px solid transparent;
+  }
+}
+
+
+
+/* app/globals.css */
+@font-face {
+  font-family: 'CustomFont';
+  src: url('/fonts/FootlightMTPro-Light.ttf') format('truetype'),
+       url('/fonts/FootlightMTPro-Light.eot?#iefix') format('embedded-open-type'),
+       url('/fonts/FootlightMTPro-Light.woff') format('woff'),
+       url('/fonts/FootlightMTPro-Light.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Arial Nova';
+  src: url('/fonts/ArialNova-Regular.woff2') format('woff2'),
+       url('/fonts/ArialNova-Regular.woff') format('woff'),
+       url('/fonts/ArialNova-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* Ensures text is visible during font loading */
+}
+
+@font-face {
+  font-family: 'Arial Nova';
+  src: url('/fonts/ArialNova-Bold.woff2') format('woff2'),
+       url('/fonts/ArialNova-Bold.woff') format('woff'),
+       url('/fonts/ArialNova-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* @font-face {
+  font-family: 'AnotherFont';
+  src: url('/fonts/AnotherFont-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+} */
+
+
+/* app/globals.css */
+@layer base {
+.quote-font {
+  font-family: 'CustomFont';
+}
+
+.title-font{
+  font-family: 'Arial Nova';
+}
+}
+
+/* Default styles for larger screens */
+.image-container {
+  display: block;
+}
+
+.chapter-list {
+  width: 50%;
+}
+
+/* Hide image on mobile portrait screens */
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .image-container {
+    display: none; /* Hide the image */
+  }
+
+  .chapter-list {
+    padding:20px;
+    width: 100%; /* Full width for chapter list */
+  }
+}
