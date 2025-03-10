@@ -47,7 +47,20 @@
   color: black;
   white-space: nowrap;
   overflow: hidden;
+  font-size:20px;
   border-right: 1px solid #dedede;
+}
+
+@media (min-width: 640px) {
+  .type-writer-text {
+      font-size: 2rem /* 16px */;
+  }
+}
+
+@media (min-width: 1200px) {
+  .type-writer-text {
+      font-size: 3rem /* 16px */;
+  }
 }
 
 @keyframes typewriter {

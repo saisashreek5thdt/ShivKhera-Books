@@ -101,7 +101,7 @@ export default function ChapterPage() {
             <p
               key={index}
               ref={(el) => (paragraphRefs.current[index] = el)}
-              className="type-writer-text text-4xl text-center hidden"
+              className="type-writer-text text-center hidden"
             >
               {paragraph}
             </p>
