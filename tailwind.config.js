@@ -8,6 +8,13 @@ module.exports = {
     // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  safelist: [
+    // Include all colors used in chapterData
+    "from-green-600",
+    "from-blue-600",
+    "from-gray-600",
+    // Add other colors from your chapterData
+  ],
   theme: {
     extend: {
       keyframes: {
