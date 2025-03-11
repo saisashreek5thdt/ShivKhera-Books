@@ -14,13 +14,14 @@ export default function Home() {
     }
   };
 
+
   return (
     <div className="bg-gradient-to-b from-gray-600 to-black h-screen flex flex-col items-center justify-center text-white -gap-10">
       {/* Animated Main Text */}
       <div className=" flex flex-col items-center justify-center uppercase ">
         <div className="overflow-hidden" >
           <p 
-            className="animate-reveal font-medium text-[85px]  " 
+            className="animate-reveal font-medium text-[75px] " 
             onAnimationEnd={handleAnimationEnd}
           >
             You Can
@@ -28,7 +29,7 @@ export default function Home() {
         </div>
         <div className="overflow-hidden">
           <p 
-            className="animate-reveal font-semibold text-[210px] -mt-20" 
+            className="animate-reveal font-semibold text-[190px] -mt-20" 
             onAnimationEnd={handleAnimationEnd}
           >
             Win
@@ -40,7 +41,7 @@ export default function Home() {
       <div className="relative -mt-10 flex items-center justify-center footLightMtPro">
         {/* Fading Text */}
         <p
-          className={`quote-font font-normal text-[35px] text-center transition-opacity duration-500 ${
+          className={`quote-font font-normal text-[25px] text-center transition-opacity duration-500 ${
             textVisible ? 'opacity-100' : 'opacity-0'
           }`}
         >
@@ -49,8 +50,8 @@ export default function Home() {
 
         {/* Animated Hover Button */}
         {!textVisible && (
-          <Link href={`/main`} onClick={()=>{}} className="group absolute w-64 h-12 bg-gray-600 text-black text-2xl rounded-full overflow-hidden shadow-lg transition-all duration-300 flex items-center justify-center">
-            <span className="relative z-10 text-center quote-font font-bold">Get in</span>
+          <Link href={`/main`} className={`group absolute w-64 h-12 bg-black border border-color: white; text-white hover:text-black text-2xl rounded-full overflow-hidden shadow-lg transition-all duration-300 flex items-center justify-center`}>
+            <span className="relative z-10 text-center quote-font font-bold">Let&apos;s Win</span>
             <div 
               className="absolute inset-0 bg-white rounded-full transform scale-y-0 group-hover:scale-y-100 transition-transform duration-500"
               style={{ transformOrigin: 'bottom' }}

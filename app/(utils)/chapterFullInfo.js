@@ -11,11 +11,32 @@ export const chapters = [
     },
     {
       id:"2",
-      title: "The Power of Persistence",
-      info: "Never Give Up",
+      title: "Build a Positive Attitude",
+      info: "Reaching your Destination",
       content: [
-      "Ability teaches us how we do things motivation determines ",
-      "why we do things attitude decides how well we do things."
+      "Ability teaches us how we do,",
+      " motivation determines why we do,",
+      "and attitude decides how well we do."
+    ]
+    },
+    {
+      id:"3",
+      title: "Success",
+      info: "Winning Strategies",
+      content: [
+      "Ability teaches us how we do,",
+      " motivation determines why we do,",
+      "and attitude decides how well we do."
+    ]
+    },
+    {
+      id:"4",
+      title: "Attributes of Success",
+      info: "Path of success",
+      content: [
+      "Ability teaches us how we do,",
+      " motivation determines why we do,",
+      "and attitude decides how well we do."
     ]
     },
   ];

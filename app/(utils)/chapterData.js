@@ -27,12 +27,5 @@ export const chapterData=[
         info:"Path of success",
         color:"green",
     },
-    {
-        id:"5",
-        Chapter:"Chapter 1",
-        title:"Importance of Attitude",
-        info:"Winner's Edge",
-        color:"blue",
-    },
     
 ]
