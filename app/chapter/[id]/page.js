@@ -196,6 +196,7 @@ export default function ChapterPage() {
             loop 
             controls 
             playsInline 
+            muted
             controlsList="nodownload" 
             className="w-full max-w-4xl rounded-lg shadow-xl"
           >
