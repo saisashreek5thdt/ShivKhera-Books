@@ -189,12 +189,11 @@ export default function ChapterPage() {
         {/* Video Container */}
         <div 
           ref={videoRef}
-          className="hidden opacity-0 translate-y-20 transition-all duration-1000 mt-10"
+          className="hidden opacity-0 translate-y-20 transition-all duration-1000 px-5"
         >
           <video 
             autoPlay 
             loop 
-            muted
             controls 
             playsInline 
             controlsList="nodownload" 
