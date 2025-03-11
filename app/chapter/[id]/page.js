@@ -76,11 +76,11 @@ export default function ChapterPage() {
 
   return (
     <>
-      <div className="quote-font flex flex-col items-center justify-center gap-10 p-10">
+      <div className="quote-font flex flex-col items-center justify-center gap-10">
         {/* Title with Parallax Effect */}
         <h1
           ref={titleRef}
-          className={`text-7xl font-normal opacity-0 transform translate-y-20 transition-all duration-1000`}
+          className={`text-7xl font-normal opacity-0 transform translate-y-20 transition-all duration-1000 px-10`}
         >
           {content.title || 'Chapter Not Found'}
         </h1>
