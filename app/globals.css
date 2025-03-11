@@ -152,3 +152,12 @@
     width: 100%; /* Full width for chapter list */
   }
 }
+
+
+
+@layer components {
+  .backdrop-blur-md {
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+}

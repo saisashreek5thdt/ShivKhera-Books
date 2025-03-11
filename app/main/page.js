@@ -2,9 +2,18 @@ import Image from "next/image";
 import menuImg from "../../public/menuImg.png"
 import Link from "next/link";
 import { chapterData } from "../(utils)/chapterData";
+import { CiHome } from "react-icons/ci"; 
 export default function Main() {
     return (
         <>
+
+        {/* Home Button */}
+        <Link href="/">
+                <div className="fixed top-10 right-10 z-10 rounded-full shadow-lg p-2 backdrop-blur-md bg-black hover:bg-white text-white hover:text-gray-600 ">
+                    <CiHome className="text-3xl transition-colors cursor-pointer" />
+                </div>
+            </Link>
+             
             <div className="bg-[rgb(223,218,214)] h-screen flex  w-full">
                 <div className="image-container w-1/2">
                     <Image
