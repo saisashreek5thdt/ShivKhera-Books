@@ -155,9 +155,15 @@
 
 
 
-@layer components {
-  .backdrop-blur-md {
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-  }
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  will-change: transform, scale;
 }

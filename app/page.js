@@ -1,7 +1,6 @@
 "use client"
 import Link from 'next/link'
 import { useRef, useState, useEffect } from 'react';
-
 export default function Home() {
   const [showButton, setShowButton] = useState(false);
   const [textVisible, setTextVisible] = useState(true);
@@ -50,7 +49,7 @@ export default function Home() {
 
         {/* Animated Hover Button */}
         {!textVisible && (
-          <Link href={`/main`} className={`group absolute w-64 h-12 bg-black border border-color: white; text-white hover:text-black text-2xl rounded-full overflow-hidden shadow-lg transition-all duration-300 flex items-center justify-center`}>
+          <Link href={`/card`} className={`group absolute w-64 h-12 bg-black border border-color: white; text-white hover:text-black text-2xl rounded-full overflow-hidden shadow-lg transition-all duration-300 flex items-center justify-center`}>
             <span className="relative z-10 text-center quote-font font-bold">Let&apos;s Win</span>
             <div 
               className="absolute inset-0 bg-white rounded-full transform scale-y-0 group-hover:scale-y-100 transition-transform duration-500"
