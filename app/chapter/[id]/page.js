@@ -149,7 +149,7 @@ export default function ChapterPage() {
 
 
             <Link
-              href="/main"
+              href="/card"
               className="flex items-center gap-3 px-4 py-2 rounded-md 
                         hover:bg-white/50 transition-colors w-full"
             >
